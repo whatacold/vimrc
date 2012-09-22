@@ -65,6 +65,9 @@ nmap <leader>w :w!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Change terminal's title
+set title
+
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -78,6 +81,9 @@ if has("win16") || has("win32")
 else
     set wildignore+=.git\*,.hg\*,.svn\*
 endif
+
+" Show line number
+set number
 
 "Always show current position
 set ruler
@@ -128,6 +134,10 @@ set foldcolumn=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Change background color
+" colorscheme blue set cterm colors, but some like desert didn't set cterm colors
+"highlight Normal guifg=xx guibg=xx ctermfg=xx ctermbg=xx
+
 " Enable syntax highlighting
 syntax enable 
 
