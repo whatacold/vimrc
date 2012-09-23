@@ -16,7 +16,7 @@ call pathogen#helptags()
 """"""""""""""""""""""""""""""
 " => TagList settings {{{
 """"""""""""""""""""""""""""""
-nnoremap <leader>l :TlistClose<CR>:TlistToggle<CR>
+nnoremap <leader>l :TlistToggle<CR>
 nnoremap <leader>L :TlistClose<CR>
 
 let Tlist_Auto_Open=1                "start Taglist with startup of vim
@@ -36,7 +36,7 @@ let Tlist_Inc_Winwidth=1             " increase window by 1 when growing
 " exuberant ctags version in /usr/local/bin
 "let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
-let Tlist_Display_Prototype=1        " show function/method prototypes in the list
+let Tlist_Display_Prototype=0        " show function/method prototypes in the list
 let Tlist_Display_Tag_Scope=0        " don't show scope info
 let Tlist_Use_Right_Window=0         " show TagList window on the right
 " }}}
