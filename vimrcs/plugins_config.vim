@@ -16,8 +16,7 @@ call pathogen#helptags()
 """"""""""""""""""""""""""""""
 " => TagList settings {{{
 """"""""""""""""""""""""""""""
-nnoremap <leader>l :TlistToggle<CR>
-nnoremap <leader>L :TlistClose<CR>
+nnoremap <leader>tl :TlistToggle<CR>
 
 let Tlist_Auto_Open=1                "start Taglist with startup of vim
 let Tlist_Exit_OnlyWindow=1          " quit when TagList is the last open window
@@ -48,14 +47,14 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
-map <leader>o :BufExplorer<cr>
+map <leader>be :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
+map <leader>mr :MRU<CR>
 
 
 """"""""""""""""""""""""""""""
@@ -84,7 +83,7 @@ endif
 """"""""""""""""""""""""""""""
 " => Peepopen
 """"""""""""""""""""""""""""""
-map <leader>j :PeepOpen<cr>
+map <leader>po :PeepOpen<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -104,7 +103,7 @@ set grepprg=/bin/grep\ -nH
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>nn :NERDTreeToggle<cr>
+map <leader>nt :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
 
