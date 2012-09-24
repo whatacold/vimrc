@@ -206,6 +206,10 @@ vnoremap <silent> # :call VisualSelection('b', '')<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fast paging
+nmap f <C-f>
+nmap b <C-b>
+
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
