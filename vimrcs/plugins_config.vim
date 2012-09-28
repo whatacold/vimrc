@@ -104,6 +104,8 @@ set grepprg=/bin/grep\ -nH
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au VimEnter *  NERDTree
+" TODO how to not gain focus when opened, and auto quit like taglist?
+let g:NERDTreeWinPos = "right"
 map <leader>nt :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>

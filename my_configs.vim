@@ -1,3 +1,6 @@
+"Display incomplete command
+set showcmd
+
 "for 'gg=G' to avoid indenting one-line return value, ie: t0
 set cino=:0,t0,g0
 
