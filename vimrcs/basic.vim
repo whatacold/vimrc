@@ -61,8 +61,9 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" Fast exit
+" Fast quiting
 map <leader>q :q<cr>
+map <leader>qa :qa<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
