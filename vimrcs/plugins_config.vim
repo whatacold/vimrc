@@ -117,3 +117,15 @@ map <leader>nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => mark.vim config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <silent> <leader>hh <Plug>MarkSet
+vmap <silent> <leader>hh <Plug>MarkSet
+nmap <silent> <leader>hc <Plug>MarkClear
+vmap <silent> <leader>hc <Plug>MarkClear
+nmap <silent> <leader>hr <Plug>MarkRegex
+vmap <silent> <leader>hr <Plug>MarkRegex
+
