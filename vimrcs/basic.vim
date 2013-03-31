@@ -354,8 +354,8 @@ map <leader>s? z=
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+" easy make
+noremap <Leader>m :make<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
