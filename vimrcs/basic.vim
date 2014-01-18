@@ -73,7 +73,7 @@ map <leader>qa :qa<cr>
 set title
 
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+set so=2
 
 " Turn on the WiLd menu
 set wildmenu
@@ -283,7 +283,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
-map 0 ^
+"map 0 ^
 
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
