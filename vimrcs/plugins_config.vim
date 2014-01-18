@@ -41,6 +41,65 @@ let Tlist_Use_Right_Window=0         " show TagList window on the right
 " }}}
 
 """"""""""""""""""""""""""""""
+" => cscope plugin {{{
+""""""""""""""""""""""""""""""
+" Use the setting in "Suggested usage" of the cscope manual
+if has("cscope")
+    set csprg=/usr/bin/cscope
+    set csto=0
+    set cst "cscopetag, replace all instance of the :tag command with :cstag
+    set nocsverb
+    " add any database in current directory
+    if filereadable("cscope.out")
+        cs add cscope.out
+        " else add database pointed to by environment
+    elseif $CSCOPE_DB != ""
+        cs add $CSCOPE_DB
+    endif
+    set csverb
+endif
+nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+" Using 'Shift-spacebar' then a search type makes the vim window
+" split horizontally, with search result displayed in
+" the new window.
+
+nmap <S-Space>s :scs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space>g :scs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space>c :scs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space>t :scs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space>e :scs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space>f :scs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <S-Space>i :scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <S-Space>d :scs find d <C-R>=expand("<cword>")<CR><CR>
+
+" Hitting Shift-space *twice* before the search type does a vertical
+" split instead of a horizontal one
+
+nmap <S-Space><S-Space>s
+            \:vert scs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space><S-Space>g
+            \:vert scs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space><S-Space>c
+            \:vert scs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space><S-Space>t
+            \:vert scs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space><S-Space>e
+            \:vert scs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <S-Space><S-Space>i
+            \:vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <S-Space><S-Space>d
+            \:vert scs find d <C-R>=expand("<cword>")<CR><CR>
+" }}}
+
+""""""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
