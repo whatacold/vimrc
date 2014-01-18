@@ -159,7 +159,12 @@ if has("gui_running")
     set t_Co=256
     set guitablabel=%M\ %t
 else
-    set t_Co=16 "for solarized colorshem
+    " References
+    "
+    " http://www.webupd8.org/2011/04/solarized-must-have-color-paletter-for.html
+    " https://github.com/seebi/dircolors-solarized/
+    " https://github.com/sigurdga/gnome-terminal-colors-solarized
+    set t_Co=16 "for solarized colorsheme
 endif
 
 " Set standard encoding
