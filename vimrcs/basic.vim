@@ -146,11 +146,11 @@ set foldcolumn=1
 syntax enable 
 
 try
-    colorscheme desert
+    colorscheme solarized
 catch
 endtry
 
-set background=dark
+"set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -158,6 +158,8 @@ if has("gui_running")
     set guioptions-=e
     set t_Co=256
     set guitablabel=%M\ %t
+else
+    set t_Co=16 "for solarized colorshem
 endif
 
 " Set standard encoding
@@ -215,7 +217,7 @@ vnoremap <silent> # :call VisualSelection('b', '')<CR>
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fast paging
-nmap f <C-f>
+nmap s <C-f>
 "nmap b <C-b>
 
 " Treat long lines as break lines (useful when moving around in them)

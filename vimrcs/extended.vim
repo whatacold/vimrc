@@ -13,9 +13,7 @@ set background=dark
 if has("gui_running")
     colorscheme peaksea
 else
-    "XXX ir_black don't highlight search correctly
-    "colorscheme ir_black
-    colorscheme desert
+    colorscheme solarized
 endif
 
 " Set font according to system
