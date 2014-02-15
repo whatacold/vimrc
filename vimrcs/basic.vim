@@ -170,6 +170,7 @@ endif
 " Set standard encoding
 if ! has('win32unix')
     set encoding=utf8
+    set fileencodings=utf-8,gbk,cp936
 else
     set encoding=cp936
 endif
