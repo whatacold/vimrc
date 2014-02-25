@@ -45,7 +45,7 @@ let Tlist_Use_Right_Window=0         " show TagList window on the right
 """"""""""""""""""""""""""""""
 " Use the setting in "Suggested usage" of the cscope manual
 if has("cscope")
-    set csprg=/usr/bin/cscope
+    set csprg=cscope
     set csto=0
     set cst "cscopetag, replace all instance of the :tag command with :cstag
     set nocsverb
