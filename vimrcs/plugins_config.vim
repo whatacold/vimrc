@@ -146,10 +146,12 @@ map <leader>po :PeepOpen<cr>
 
 
 """"""""""""""""""""""""""""""
-" => snipMate (beside <TAB> support <CTRL-j>)
+" => UltiSnips
 """"""""""""""""""""""""""""""
-ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
+let g:UltiSnipsExpandTrigger         =     "<c-j>"
+let g:UltiSnipsListSnippets          =     "<c-tab>"
+let g:UltiSnipsJumpForwardTrigger    =     "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger   =     "<c-m>"
 
 
 """"""""""""""""""""""""""""""
