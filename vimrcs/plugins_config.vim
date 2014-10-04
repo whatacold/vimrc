@@ -148,10 +148,11 @@ map <leader>po :PeepOpen<cr>
 """"""""""""""""""""""""""""""
 " => UltiSnips
 """"""""""""""""""""""""""""""
-let g:UltiSnipsExpandTrigger         =     "<c-j>"
-let g:UltiSnipsListSnippets          =     "<c-tab>"
-let g:UltiSnipsJumpForwardTrigger    =     "<c-j>"
-let g:UltiSnipsJumpBackwardTrigger   =     "<c-m>"
+" 't' for ulti, make sure these two chars could be type by left hand
+let g:UltiSnipsExpandTrigger         =     "ts"
+let g:UltiSnipsListSnippets          =     "tl"
+let g:UltiSnipsJumpForwardTrigger    =     "tf"
+let g:UltiSnipsJumpBackwardTrigger   =     "tb"
 
 
 """"""""""""""""""""""""""""""
